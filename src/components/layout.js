@@ -4,7 +4,7 @@ const Layout = ({children}) => {
         return (
             <React.Fragment>
                 <main>
-                    <div className="container">
+                    <div>
                         {children}
                     </div>
                 </main>

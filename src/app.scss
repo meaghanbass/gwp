@@ -1,3 +1,58 @@
+// Theme Colors
+$bg-white: #FFFFFF;
+$bg-lt: #A2AED2;
+$bg-md: #58617D;
+$bg-dk: #10182F;
+$txt-lt: #A2AED2;
+$txt-md: #58617D;
+$txt-dk: #10182F;
+
+// Theme Fonts
+$hind: 'Hind', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+// Root Colors
+$white: #fff;
+$black: #000;
+$nebula: #5468ff;
+$moon: #f5f5fa;
+$asteroid: #dddfed;
+$proton: #c5c9e0;
+$nova: #848ab8;
+$telluric: #5d6494;
+$solstice: #3a416f;
+$cosmos: #21243d;
+$neptune-0: #3944a0;
+$neptune-1: #565db6;
+$neptune-2: #7178cc;
+$neptune-3: #8c93e2;
+$neptune-4: #a6b0f9;
+$mercury-0: #008fba;
+$mercury-1: #2da7cb;
+$mercury-2: #5bbfdd;
+$mercury-3: #88d6ee;
+$mercury-4: #b5eeff;
+$jupiter-0: #3ab2bd;
+$jupiter-1: #61c5c8;
+$jupiter-2: #89d9d3;
+$jupiter-3: #b0ecde;
+$jupiter-4: #d7ffe9;
+$saturn-0: #ec8b63;
+$saturn-1: #f3a57e;
+$saturn-2: #f8be9a;
+$saturn-3: #fcd7b7;
+$saturn-4: #fdf1d4;
+$mars-0: #ed5a6a;
+$mars-1: #f27885;
+$mars-2: #f695a0;
+$mars-3: #fbb3ba;
+$mars-4: #ffd0d5;
+$venus-0: #ae3e88;
+$venus-1: #d44fa4;
+$venus-2: #ea71bc;
+$venus-3: #f89ad3;
+$venus-4: #ffcae9;
 
 
 .site_info_title {
@@ -9,123 +64,58 @@
     }
 }
 
-$bg-white: #FFFFFF;
-$bg-lt: #A2AED2;
-$bg-md: #58617D;
-$bg-dk: #10182F;
-$txt-lt: #A2AED2;
-$txt-md: #58617D;
-$txt-dk: #10182F;
-
-#toggleBtn {
-    display: flex;
-    position: relative;
-    width: 60px;
-    height: 30px;
-    border-radius: 9999px;
-    border: none;
-    transition: ease-in-out 0.5s;
-    background-color: $bg-lt;
-    align-items: center;
-    &:hover, &:focus, &:active {
-        cursor: pointer;
-        box-shadow: inset 0 0 5px black;
-    }
-    #toggleCl {
-        bottom: 5px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        // background-color: white;
-        transition: ease-in-out 0.5s;
-        display: flex;
-        box-shadow: -2px -2px 3px 0px rgba(255, 255, 255, 0.6), 2px 2px 3px 0px rgba(0,0,0, 0.4);
-    }
+.fixed-background::before {
+    content:'';
+    background-image: url(./images/bg1.png);
+    position: fixed;
+    top: 0;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
-#toggleBtn.off {
-    transition: ease-in-out 0.5s;
-    box-shadow: inset 0 0 5px $bg-md;
-    #toggleCl {
-        background-color: $bg-white;
-    }
-}
-#toggleBtn.on {
-    transition: ease-in-out 0.5s;
-    // justify-content: flex-end;
-    background-color: $bg-white;
-    #toggleCl {
-        background-color: $bg-dk;
-        margin-left: 24px;
-    }
-}
-
-.light {
-    header {
-        background: $bg-white;
-        color: $txt-dk;
-        transition: ease-in-out 0.5s;
-    }
-    footer {
-        background: #FFFFFF;
-        color: $txt-md;
-        transition: ease-in-out 0.5s;
-        border-top: 5px solid #10182F;
-        .site_info_title {
-            color: #10182F;
-        }
-        h3 {
-            color: #2E3750;
-            transition: ease-in-out 0.5s;
-            margin: 0;
-        }
-    }
-}
-
-.dark {
-    header {
-        background: $bg-dk;
-        color: $txt-lt;
-        transition: ease-in-out 0.5s;
-    }
-    footer {
-        background: #10182F;
-        color: $txt-lt;
-        transition: ease-in-out 0.5s;
-        .site_info_title {
-            color: $txt-lt;
-        }
-        h3 {
-            color: $txt-lt;
-            transition: ease-in-out 0.5s;
-        }
-    }
+.fixed-background {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    z-index: -300;
 }
 
 header {
     box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-    .container {
-        padding: 3rem 6rem;
+    > div {
+        // padding: 0 6rem;
         display: flex;
         justify-content: space-between;
         .site_info_title {
             width: 200px;
         }
-        nav {
-            ul {
-                list-style-type: none;
-                padding-left: 0;
-                display: flex;
+    }
+    nav {
+        width: 100%;
+        background: white;
+        .navbar-nav {
+            font-family: $hind;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            a {
+                color: $solstice;
+                margin: 0 10px;
+                &:hover {
+                    color: $nebula;
+                }
             }
-        }
-        .btn-container {
-            width: 200px;
         }
     }
 }
 
 main {
     text-align: center;
-    .container {
+    > div {
         min-height: 100vh;
         margin: 3rem 6rem;
         border: 1px dashed lightgray;
@@ -133,12 +123,18 @@ main {
 }
 
 footer {
-    font-weight: 500;
+    font-weight: 400;
+    background-color: $moon;
+    color: $telluric;
+    font-family: $hind;
+    font-size: 0.875rem;
     h3 {
         text-transform: uppercase;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         letter-spacing: 0.05em;
         font-weight: 700;
+        font-family: $poppins;
+        color: $solstice;
     }
     ul {
         list-style-type: none;

@@ -1,29 +1,34 @@
 import React from 'react';
-import Navbar from './navbar';
+import { NavLink, HashRouter } from "react-router-dom";
+
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
 class Header extends React.Component {
     render(){
-
-        const btnToggle = () => {
-            var element = document.getElementById("theme");
-            var toggler = document.getElementById("toggleBtn");
-            element.classList.toggle("dark");
-            toggler.classList.toggle("on");
-        };
-
         return (
             <React.Fragment>
                 <header>
-                    <div class="container">
-                        <div className="site_info_title">
-                            <p>Site Title</p>
-                        </div>
-                        <Navbar />
-                        <div className="btn-container">
-                            <button id="toggleBtn" className="off" onClick={btnToggle}>
-                                <span id="toggleCl"></span>
-                            </button>
-                        </div>
+                    <div className="container">
+                        <HashRouter>
+                            <Navbar bg="none" expand="lg">
+                                <Navbar.Brand href="#home">
+                                    <div className="site_info_title">
+                                        <p>Site Title</p>
+                                    </div>
+                                </Navbar.Brand>
+                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Collapse id="basic-navbar-nav">
+                                    <Nav className="mr-auto">
+                                        <NavLink to="/">Home</NavLink>
+                                        <NavLink to="/contact">Contact</NavLink>
+                                    </Nav>
+                                    <Button variant="outline-success"><NavLink to="/contact">Contact</NavLink></Button>
+                                </Navbar.Collapse>
+                            </Navbar>
+                        </HashRouter>
                     </div>
                 </header>
             </React.Fragment>

@@ -56,7 +56,6 @@ class Footer extends React.Component {
                             <div className="center">
                                 <ul>
                                     <li><a href="/">Contact</a></li>
-                                    {/* <li><a href="/">Terms of Service</a></li> */}
                                     <li><a href="/">Privacy Policy</a></li>
                                     <li><a href="/">Sitemap</a></li>
                                 </ul>
