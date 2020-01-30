@@ -67,11 +67,9 @@ $venus-4: #ffcae9;
 .fixed-background::before {
     content:'';
     background-image: url(./images/bg1.png);
-    position: fixed;
-    top: 0;
     background-position: center center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100vh;
     display: block;
 }
 .fixed-background {

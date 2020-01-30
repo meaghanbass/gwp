@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './app.scss';
 import Header from './components/header/index';
 import Footer from './components/footer/index';
-import BGI from './components/fixedBg';
+// import BGI from './components/fixedBg';
 import {
   Route,
   HashRouter
@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div id="theme" className="light">
         <Header />
-        <BGI />
+        {/* <BGI /> */}
         <HashRouter>
             <div className="content">
               <Route exact path="/" component={Home}/>

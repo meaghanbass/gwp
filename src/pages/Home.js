@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import Layout from '../components/layout';
+import BGI from './../components/fixedBg';
 
 class Home extends Component {
     render() {
         return (
             <Layout>
+                <BGI>
                 <div>
                     <h2>Home</h2>
                     <p>Cras facilisis urna ornare ex volutpat, et
@@ -16,6 +18,7 @@ class Home extends Component {
             
                     <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
                 </div>
+                </BGI>
             </Layout>
         );
     }
