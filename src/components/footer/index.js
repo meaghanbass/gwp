@@ -15,8 +15,9 @@ class Footer extends React.Component {
                             </div>
                             <div className="link-sections">
                                 <div className="ls_1">
-                                    <h3>Community</h3>
+                                    {/* <h3>Community</h3> */}
                                     <ul>
+                                        <h3>Community</h3>
                                         <li><a href="/">About</a></li>
                                         <li><a href="/">Submit an issue</a></li>
                                         <li><a href="/">GitHub Repo</a></li>
@@ -24,8 +25,9 @@ class Footer extends React.Component {
                                     </ul>
                                 </div>
                                 <div className="ls_2">
-                                    <h3>Getting Started</h3>
+                                    {/* <h3>Getting Started</h3> */}
                                     <ul>
+                                        <h3>Getting Started</h3>
                                         <li><a href="/">Introduction</a></li>
                                         <li><a href="/">Documentation</a></li>
                                         <li><a href="/">Usage</a></li>
@@ -36,16 +38,17 @@ class Footer extends React.Component {
                                     </ul>
                                 </div>
                                 <div className="ls_3">
-                                    <h3>Resources</h3>
-                                    <ul>
-                                        <li><a href="/">API</a></li>
-                                        <li><a href="/">Form Validations Product</a></li>
-                                        <li><a href="/">Visibility</a></li>
-                                        <li><a href="/">Accessibility</a></li>
-                                        <li><a href="/">Community</a></li>
-                                        <li><a href="/">Design Defined</a></li>
-                                        <li><a href="/">Marketplace</a></li>
-                                    </ul>
+                                    <form>
+                                        <h3>Subscribe for Updates</h3>
+                                        <div>
+                                            <label className="form-label" for="fname">Name</label>
+                                            <input id="fname" class="required" type="text" name="fname" aria-required="true"></input>
+                                        </div>
+                                        <div>
+                                            <label className="form-label" for="email">Email</label>
+                                            <input id="email" class="required" type="email" name="email" aria-required="true"></input>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

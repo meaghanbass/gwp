@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './app.scss';
 import Header from './components/header/index';
 import Footer from './components/footer/index';
-// import BGI from './components/fixedBg';
 import {
   Route,
   HashRouter
@@ -10,13 +9,19 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ParallaxProvider } from 'react-skrollr';
 
 class App extends Component {
   render() {
     return (
-      <div id="theme" className="light">
+      <ParallaxProvider
+      init={{
+        smoothScrollingDuration: 500,
+        smoothScrolling: true,
+        forceHeight: false
+      }}>
+      <div>
         <Header />
-        {/* <BGI /> */}
         <HashRouter>
             <div className="content">
               <Route exact path="/" component={Home}/>
@@ -25,6 +30,7 @@ class App extends Component {
         </HashRouter>
         <Footer />
       </div>
+      </ParallaxProvider>
     );
   }
 }

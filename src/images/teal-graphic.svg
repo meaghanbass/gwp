@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1140 400">
+    <defs>
+        <style>.cls-1{fill:url(#radial-gradient);}.cls-2,.cls-3,.cls-4,.cls-5{fill-rule:evenodd;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}.cls-4{fill:url(#linear-gradient-3);}.cls-5{fill:url(#linear-gradient-4);}
+        </style>
+        <radialGradient id="radial-gradient" cx="425.4338" cy="479.8025" r="1.4258" gradientTransform="matrix(400.0032, 0, 0, -400, -169604.8651, 192321)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3a416f"/>
+            <stop offset="1" stop-color="#21243d"/>
+        </radialGradient>
+        <linearGradient id="linear-gradient" x1="425.6201" y1="480.804" x2="426.6201" y2="479.804" gradientTransform="matrix(1117, 0, 0, -400, -475416, 192321)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#008fba" stop-opacity="0"/>
+            <stop offset="1" stop-color="#5bbfdd"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="425.4115" y1="480.8046" x2="426.4115" y2="479.8046" gradientTransform="matrix(721.3, 0, 0, -400, -306847.7948, 192321)" xlink:href="#linear-gradient"/>
+        <linearGradient id="linear-gradient-3" x1="425.6274" y1="480.804" x2="426.6274" y2="479.804" gradientTransform="matrix(1139, 0, 0, -400, -484788, 192321)" xlink:href="#linear-gradient"/>
+        <linearGradient id="linear-gradient-4" x1="424.8761" y1="480.8033" x2="425.7532" y2="479.9339" gradientTransform="matrix(378.76, 0, 0, -400, -160925.7642, 192321)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3ad1ff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#5bbfdd"/>
+        </linearGradient>
+    </defs>
+<title>teal-bg2</title>
+<rect class="cls-1" width="1140" height="400" rx="8"/>
+<path class="cls-2" d="M8,0H1117L155.223,400H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"/>
+<path class="cls-3" d="M8,0H721.3L131.84,400H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"/>
+<path class="cls-4" d="M8,0H1139L996.847,400H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"/>
+<path class="cls-5" d="M8,0H378.76L120.535,400H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"/>
+</svg>
