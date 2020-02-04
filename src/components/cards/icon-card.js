@@ -2,7 +2,9 @@ import React from 'react';
 
 const IconCard = ({children}) => (
     <div className="icon-card">
-        {children}
+        <div className="icon-card_inner">
+            {children}
+        </div>
     </div>
 )
 

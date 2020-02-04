@@ -62,9 +62,21 @@ $venus-4: #ffcae9;
     p {
         margin: 0;
     }
-
     color: $nebula;
     font-family: $ubuntu;
+}
+
+.link-arrow {
+    color: #6772e5;
+    font-weight: 500;
+    &::after {
+        content: '\2192';
+        padding-left: 5px;
+    }
+    &:hover {
+        text-decoration: none;
+        color: #6772e5;
+    }
 }
 
 .theme-button {
@@ -208,6 +220,9 @@ main {
         line-height: 1.33;
         color: $solstice;
     }
+    .what-we-do {
+        margin: 10rem auto;
+    }
     .card-wrapper {
         display: flex;
         // columns: 2;
@@ -224,6 +239,20 @@ main {
             color: $telluric;
             font-family: $hind;
             transition: all 0.2s ease-in-out;
+            // box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+            box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+            .icon-card_inner {
+                padding-bottom: 1.5rem;
+                position: relative;
+                height: 100%;
+            }
+            .link-arrow {
+                position: absolute;
+                bottom: 0;
+                border-top: 2px solid #f1f7fb;
+                width: 100%;
+                right: 0;
+            }
             &:not(:first-of-type) {
                 margin-left: 10px;
             }
@@ -231,26 +260,88 @@ main {
                 margin-right: 10px;
             }
             &:hover {
-                // background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 245, 250));
-                // box-shadow: 0 5px 15px 0 rgba(37,44,97,.15),0 2px 4px 0 rgba(93,100,148,.2);
-                box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+                // box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+                box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025); // Stripe box-shadow
             }
             h4 {
                 height: 50px;
-                // background: pink;
                 align-items: center;
                 display: flex;
                 justify-content: center;
                 margin-bottom: 1.5rem;
             }
-            img {
-                -webkit-animation:spin 4s linear infinite;
-                -moz-animation:spin 4s linear infinite;
-                animation:spin 4s linear infinite;
+            p {
+                margin-bottom: 2rem;
             }
-            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            svg {
+                width: 66px;
+                height: 66px;
+                .big {
+                    -webkit-transform-origin: 40px 25px;
+                    -moz-transform-origin: 40px 25px;
+                    -o-transform-origin: 40px 25px;
+                    transform-origin: 40px 25px;
+                    -webkit-animation: rotate 3s linear infinite;
+                    -moz-animation: rotate 3s linear infinite;
+                    -o-animation: rotate 3s linear infinite;
+                    animation: rotate 3s linear infinite
+                }
+                .small {
+                    -webkit-transform-origin: 28px 37px;
+                    -moz-transform-origin: 28px 37px;
+                    -o-transform-origin: 28px 37px;
+                    transform-origin: 28px 37px;
+                    -webkit-animation: rotate 3s linear infinite;
+                    -moz-animation: rotate 3s linear infinite;
+                    -o-animation: rotate 3s linear infinite;
+                    animation: rotate 3s linear infinite;
+                }
+            }
+
+            @-webkit-keyframes rotate {
+                0% {
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
+            @-moz-keyframes rotate {
+                0% {
+                    -moz-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -moz-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
+            @-o-keyframes rotate {
+                0% {
+                    -o-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
+            @keyframes rotate {
+                0% {
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    -o-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                100% {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
 }
