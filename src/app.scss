@@ -290,6 +290,10 @@ main {
             svg {
                 width: 66px;
                 height: 66px;
+            }
+            svg.gears {
+                width: 66px;
+                height: 66px;
                 .big {
                     -webkit-transform-origin: 40px 25px;
                     -moz-transform-origin: 40px 25px;
@@ -309,6 +313,40 @@ main {
                     -moz-animation: rotate 3s linear infinite;
                     -o-animation: rotate 3s linear infinite;
                     animation: rotate 3s linear infinite;
+                }
+            }
+            svg.hosting {
+                .top {
+                    -webkit-animation: movertop 2s ease-in-out infinite;
+                    -moz-animation: movertop 2s ease-in-out infinite;
+                    -o-animation: movertop 2s ease-in-out infinite;
+                    animation: movertop 2s ease-in-out infinite;
+                }
+                .bottom {
+                    -webkit-animation: moverbottom 2s ease-in-out infinite;
+                    -moz-animation: moverbottom 2s ease-in-out infinite;
+                    -o-animation: moverbottom 2s ease-in-out infinite;
+                    animation: moverbottom 2s ease-in-out infinite;
+                }
+                @-webkit-keyframes moverbottom {
+                    0% { transform: translateY(0); }
+                    50% { transform: translateY(-2.5px); }
+                    100% { transform: translateY(0); }
+                }
+                @keyframes moverbottom {
+                    0% { transform: translateY(0); }
+                    50% { transform: translateY(3.5px); }
+                    100% { transform: translateY(0); }
+                }
+                @-webkit-keyframes movertop {
+                    0% { transform: translateY(0); }
+                    50% { transform: translateY(3.5px); }
+                    100% { transform: translateY(0); }
+                }
+                @keyframes movertop {
+                    0% { transform: translateY(0); }
+                    50% { transform: translateY(-3.5px); }
+                    100% { transform: translateY(0); }
                 }
             }
 
