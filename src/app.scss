@@ -81,7 +81,7 @@ $venus-4: #ffcae9;
 
 .theme-button {
     margin: 0 0.5rem;
-    min-width: 200px;
+    // min-width: 200px;
     padding-left: 32px;
     padding-right: 32px;
     text-transform: uppercase;
@@ -291,6 +291,7 @@ main {
                 width: 66px;
                 height: 66px;
             }
+
             svg.gears {
                 width: 66px;
                 height: 66px;
@@ -315,6 +316,7 @@ main {
                     animation: rotate 3s linear infinite;
                 }
             }
+
             svg.hosting {
                 .top {
                     -webkit-animation: movertop 2s ease-in-out infinite;
@@ -330,7 +332,7 @@ main {
                 }
                 @-webkit-keyframes moverbottom {
                     0% { transform: translateY(0); }
-                    50% { transform: translateY(-2.5px); }
+                    50% { transform: translateY(3.5px); }
                     100% { transform: translateY(0); }
                 }
                 @keyframes moverbottom {
@@ -340,7 +342,7 @@ main {
                 }
                 @-webkit-keyframes movertop {
                     0% { transform: translateY(0); }
-                    50% { transform: translateY(3.5px); }
+                    50% { transform: translateY(-2.5px); }
                     100% { transform: translateY(0); }
                 }
                 @keyframes movertop {
@@ -392,6 +394,52 @@ main {
                     -moz-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
                     transform: rotate(180deg);
+                }
+            }
+
+            svg.appdev {
+                path.st3 {
+                    stroke-dasharray: 50;
+                    animation: dash 2.5s linear infinite;
+                }
+                @keyframes dash {
+                    to {
+                        stroke-dashoffset: 100;
+                    }
+                }
+            }
+            svg.solutions {
+                .toptoggle {
+                    -webkit-animation: toptoggle 2s ease-in-out infinite;
+                    -moz-animation: toptoggle 2s ease-in-out infinite;
+                    -o-animation: toptoggle 2s ease-in-out infinite;
+                    animation: toptoggle 2s ease-in-out infinite;
+                }
+                .bottomtoggle {
+                    -webkit-animation: bottomtoggle 2s ease-in-out infinite;
+                    -moz-animation: bottomtoggle 2s ease-in-out infinite;
+                    -o-animation: bottomtoggle 2s ease-in-out infinite;
+                    animation: bottomtoggle 2s ease-in-out infinite;
+                }
+                @-webkit-keyframes toptoggle {
+                    0% { transform: translateX(0); }
+                    50% { transform: translateX(12px); }
+                    100% { transform: translateX(0); }
+                }
+                @keyframes toptoggle {
+                    0% { transform: translateX(0); }
+                    50% { transform: translateX(12px); }
+                    100% { transform: translateX(0); }
+                }
+                @-webkit-keyframes bottomtoggle {
+                    0% { transform: translateX(10px); }
+                    50% { transform: translateX(0px); }
+                    100% { transform: translateX(10px); }
+                }
+                @keyframes bottomtoggle {
+                    0% { transform: translateX(10px); }
+                    50% { transform: translateX(0px); }
+                    100% { transform: translateX(10px); }
                 }
             }
         }

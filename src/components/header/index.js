@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
+import ButtonLt from '../../components/buttons/button-lt';
 
 class Header extends React.Component {
     render(){
@@ -25,7 +26,8 @@ class Header extends React.Component {
                                         <NavLink to="/">Home</NavLink>
                                         <NavLink to="/contact">Contact</NavLink>
                                     </Nav>
-                                    <Button variant="outline-success"><NavLink to="/contact">Contact</NavLink></Button>
+                                    {/* <Button variant="outline-success"><NavLink to="/contact">Contact</NavLink></Button> */}
+                                    <ButtonLt><NavLink to="/contact">Contact</NavLink></ButtonLt>
                                 </Navbar.Collapse>
                             </Navbar>
                         </HashRouter>
