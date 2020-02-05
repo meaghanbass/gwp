@@ -167,6 +167,22 @@ main {
         z-index: -3000;
         background-position: center center;
     }
+    // .testbg {
+    //     background-image: url('./images/image.svg');
+    //     background-size: 100% 100%;
+    //     overflow: hidden;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     position: absolute;
+    //     right: 0;
+    //     display: none;
+    //     left: 0;
+    //     // top: 0;
+    //     background-position: 50%;
+    //     @media screen and (min-width: 960px) {
+    //         display: block;
+    //     }
+    // }
     .bg {
         display: flex;
         height: 100vh;
@@ -193,8 +209,6 @@ main {
     .dark-section {
         background-image: radial-gradient( circle at 50% 0,#3a416f,#21243d );
         width: 100vw;
-        // position: relative;
-        // left: 0;
         color: $white;
         padding: 8rem 0;
         display: flex;
@@ -225,7 +239,6 @@ main {
     }
     .card-wrapper {
         display: flex;
-        // columns: 2;
         .icon-card {
             width: 100%;
             flex: 1;
@@ -252,6 +265,7 @@ main {
                 border-top: 2px solid #f1f7fb;
                 width: 100%;
                 right: 0;
+                padding-top: 15px;
             }
             &:not(:first-of-type) {
                 margin-left: 10px;

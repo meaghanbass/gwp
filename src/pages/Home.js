@@ -13,6 +13,7 @@ class Home extends Component {
 
         return (
             <Layout>
+                {/* <div className="testbg"></div> */}
                 <div className="bg">
                     <h1>WEB MANAGEMENT<br/>TO POWER YOUR BUSINESS.</h1>
                     <p>Optimizing multi-platform user experiences</p>
